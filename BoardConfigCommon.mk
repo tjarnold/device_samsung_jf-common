@@ -36,12 +36,14 @@ BOARD_KERNEL_CMDLINE        := androidboot.hardware=qcom user_debug=31 zcache
 BOARD_KERNEL_BASE           := 0x80200000
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
 BOARD_KERNEL_PAGESIZE       := 2048
+TARGET_KERNEL_VARIANT_CONFIG := cyanogen_jf_defconfig
+TARGET_KERNEL_SELINUX_CONFIG := jfselinux_defconfig
 
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
 
 # Recovery
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/jf-common/recovery/recovery_keys.c
-BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
+BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 BOARD_USES_MMCUTILS := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_HAS_NO_MISC_PARTITION := true
