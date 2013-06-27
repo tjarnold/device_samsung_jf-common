@@ -40,6 +40,7 @@ TARGET_KERNEL_VARIANT_CONFIG := cyanogen_jf_defconfig
 TARGET_KERNEL_SELINUX_CONFIG := jfselinux_defconfig
 
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
+TARGET_GCC_VERSION := 4.6
 
 # Recovery
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/jf-common/recovery/recovery_keys.c
