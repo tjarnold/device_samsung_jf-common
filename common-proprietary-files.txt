@@ -4,9 +4,7 @@ bin/mpdecision
 
 # Thermal
 bin/thermald
-etc/thermald-8064.conf
-etc/thermald-8930.conf
-etc/thermald-8960.conf
+bin/thermal-engine
 
 # Bluetooth firmware
 vendor/firmware/bcm2079xB4_firmware.ncd
@@ -20,7 +18,8 @@ vendor/firmware/bcm4335_semco.hcd
 lib/libacdbloader.so
 lib/libaudcal.so
 lib/libcsd-client.so
-
+etc/firmware/wcd9310/wcd9310_anc.bin
+etc/firmware/wcd9310/wcd9310_mbhc.bin
 
 # mmparser extended
 lib/libExtendedExtractor.so
@@ -93,6 +92,8 @@ lib/libreference-ril.so
 lib/libril-qcril-hook-oem.so
 lib/libsecril-client.so
 lib/libtime_genoff.so
+lib/libril-qc-qmi-1.so
+lib/libril.so
 
 # GPS
 lib/libloc_api_v02.so
@@ -181,7 +182,7 @@ etc/wifi/bcmdhd_sta.bin_a0
 etc/wifi/cred.conf
 etc/wifi/nvram_mfg.txt
 etc/wifi/nvram_mfg.txt_a0
-#etc/wifi/nvram_mfg.txt_murata
+etc/wifi/nvram_mfg.txt:etc/wifi/nvram_mfg.txt_murata
 etc/wifi/nvram_mfg.txt_murata_a0
 etc/wifi/nvram_mfg.txt_muratafem1
 etc/wifi/nvram_mfg.txt_muratafem2
@@ -190,7 +191,7 @@ etc/wifi/nvram_mfg.txt_semco3rd_a0
 etc/wifi/nvram_mfg.txt_semcosh
 etc/wifi/nvram_net.txt
 etc/wifi/nvram_net.txt_a0
-#etc/wifi/nvram_net.txt_murata
+etc/wifi/nvram_net.txt:etc/wifi/nvram_net.txt_murata
 etc/wifi/nvram_net.txt_murata_a0
 etc/wifi/nvram_net.txt_muratafem1
 etc/wifi/nvram_net.txt_muratafem2
